@@ -10,53 +10,45 @@
   
  * 构造方法
   
- ```
+  ``` objective-c
      let layout = WaterFlowViewLayout()
-    
     //构造方法
     init()
     {
         super.init(collectionViewLayout: layout)
     } 
-    
- ```
+```
+
  * 初始化
  
-```
+``` objective-c
         let Margin:CGFloat = 8;
-        
         /// 瀑布流四周的间距
         layout.sectionInsert = UIEdgeInsets(top: Margin, left: Margin, bottom: Margin, right: Margin)
-        
         /// 瀑布流列数
         layout.column = 5
-        
         /// 列间距
         layout.columnMargin = Margin
-        
         /// 行间距
         layout.rowMargin = Margin
-        
         // 设置代理
         layout.delegate = self        
 ```
 
  *  实现代理
  
-```
+```objective-c
 //MARK: 代理方法
     /// 返回每个cell的高度,需要heightForWidth等比例缩放后的
     func waterFlowViewLayout(waterFlowViewLayout: WaterFlowViewLayout, heightForWidth: CGFloat, atIndexPath: NSIndexPath) -> CGFloat
     {
         return CGFloat(100 + arc4random_uniform(50))//测试使用随机值
     }
-
     ///返回cell的数量
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return 500//测试
     }
-    
     //返回cell
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
