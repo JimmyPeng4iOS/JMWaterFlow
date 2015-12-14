@@ -1,5 +1,5 @@
 # JMWaterFlow
-#####JMWaterFlow 对常见的 *瀑布流* 布局做了封装。 它使用UICollectionView来布局瀑布流，通过自定义layout布局来实现，简单易用。 
+#####JMWaterFlow 使用 *Swift* 语言 对常见的 瀑布流 布局做了封装。 它使用UICollectionView来布局瀑布流，通过自定义layout布局来实现，简单易用。 
 
 * 可自定义布局参数:
 
