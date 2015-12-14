@@ -2,6 +2,8 @@
 #####JMWaterFlow 对常见的 *瀑布流* 布局做了封装。 它使用UICollectionView来布局瀑布流，通过自定义layout布局来实现，简单易用。 
 
 * 可自定义布局参数:
+
+
 ![JMWaterFlow.png](http://upload-images.jianshu.io/upload_images/1115674-641c59c78a8bbb6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ####使用方式
