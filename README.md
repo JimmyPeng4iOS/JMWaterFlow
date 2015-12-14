@@ -38,10 +38,10 @@
         layout.rowMargin = Margin
         
         // 设置代理
-        layout.delegate = self
+        layout.delegate = self        
 ```
 
- *  实现代理方法
+ *  实现代理
  
 ```
 //MARK: 代理方法
