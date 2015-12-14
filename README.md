@@ -20,7 +20,7 @@
     } 
     
  ```
-*  初始化
+ * 初始化
  
 ```
         let Margin:CGFloat = 8;
